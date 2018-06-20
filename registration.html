@@ -1,0 +1,119 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate(){
+				var name=document.myform.name.value;
+				var mobile=document.myform.pno.value;
+				var password=document.myform.password.value;
+				varfname=document.myform.fname.value;
+var password1=document.myform.password1.value;
+
+				if(name.length<=3)
+				{
+					alert("Please enter valid name");
+					document.myform.name.focus();
+					return false;
+				}
+if(fname.length<=3)
+				{
+					alert("Please enter valid name");
+					document.myform.name.focus();
+					return false;
+				}
+				if(mobile.length<10)
+				{
+					alert("Your mobile number should have 10 digits");
+					document.myform.mobile.focus();
+					return false;
+				}
+var x = document.forms["myform"]["email"].value;
+varatpos = x.indexOf("@");
+vardotpos = x.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+alert("Not a valid e-mail address");
+return false;
+                                    }
+var y = document.forms["myform"]["rid"].value;
+varatpos = y.indexOf("@");
+vardotpos = y.lastIndexOf(".");
+if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length) {
+alert("Not a valid e-mail address");
+return false;
+                                            }
+				if(password.length<6)
+				{
+					alert("Your password should be more than 5 characters");
+					document.myform.password.focus();
+					return false;
+				}
+if(password1!==password){
+alert("Your RE-Entered password must match with Above password");
+					document.myform.password1.focus();
+					return false;
+                                }
+
+			}
+</script>
+<div align="top" style="width:1350px;height:250px;border:solid;border-width:2px;background:yellow;">
+<imgsrc="veg1.jpg" height="250" width="250"/>
+<imgsrc="veg.png" height="250" width="1040"/>
+</div>
+<title>Registration Form</title>
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>	
+<li><a href="howtoorder.html">How to order</a></li>	
+<li><a href="reg form.html">Registration</a>			
+<li><a href="delivery.html">Delivery Process</a></li>
+<li><a href="account.html">My Account</a></li>
+<li><a href="feedback.html">Feed Back</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="admin.html">Admin</a></li>
+</ul>
+</nav>
+<form action="registration.jsp" name="myform"  onsubmit="return validate();">
+<table width="659" height="39" border="0" align="center" cellpadding="3" cellspacing="3">
+<tr><td colspan="2"  class="box_text" >Registration Form</td></tr>
+<tr style="border-bottom: dashed 1px #e2e2e2;"><td colspan="2" height="8px" style="border-bottom: dashed 2px #99cc33;" ></td></tr>
+<tr><td width=25%>User Name*</td><td width=25%><input type="text" name="uname" id="uname" value=""/><br /></td></tr>
+<tr><td width=25%>PASSWORD*</td><td width=25%><input type="password" name="password" id="password" value=""/><br /></td></tr>
+<tr><td width=25%>RE-ENTER PASSWORD*</td><td width=25%><input type="password" name="password1" id="password1" value=""/><br /></td></tr>
+<tr><td width=25%>Name*</td><td width=25%><input type="text" name="name" id="name" value=""/><br /></td></tr>
+<tr><td>Father's Name:*</td>
+<td><input type="text" name="fname" id="fname" value=""/><br /></td></tr>
+<tr><td>Gender*</td>
+<td>male<input type="radio" name="gender" value="m"/>
+female<input type="radio" name="gender" value="f"/><br /></td></tr>
+<tr><td>E-mail Id*</td>
+<td><input type="text" name="email" id="email" value=""/><br /></td></tr>
+<tr><td>Address*</td>
+<td><textarea name="addr" rows="7" cols="17">
+</textarea><br/></td></tr>
+<tr><td>Phone no*</td>
+<td><input type="text" name="pno" id="pno" value=""/><br /></td></tr>
+<tr><td>Reference mail</td>
+<td><input type="text" name="rid" id="rid" value=""/><br /></td></tr>
+<tr align="center"><td><input type="submit" value="submit"/></td></tr>
+</table>
+</font>
+</form><br/><br/><br/><br/>
+<center><imgsrc="home_delivery_reach1.jpg"  style="background-position:bottom;"/></center>
+<marquee>
+<imgsrc="veg2.jpg" height="200" width="205"/>
+<imgsrc="veg3.jpg" height="200" width="205"/>
+<imgsrc="veg4.jpg" height="200" width="205"/>
+<imgsrc="veg5.jpg" height="200" width="205"/>
+<imgsrc="11.jpg" height="200" width="205"/>
+<imgsrc="22.jpg" height="200" width="205"/>
+<imgsrc="33.jpg" height="200" width="205"/>
+<imgsrc="44.jpg" height="200" width="205"/>
+<imgsrc="345.jpg" height="200" width="205"/>
+<imgsrc="456.jpg" height="200" width="205"/>
+<!--<imgsrc="1233.jpg" height="200" width="205"></img>-->
+</marquee>
+</body>
+</html>
+
